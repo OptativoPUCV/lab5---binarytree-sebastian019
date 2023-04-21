@@ -170,7 +170,7 @@ Pair * nextTreeMap(TreeMap * tree) {
     return tree -> current -> pair;
   }
   if(tree -> current -> right != NULL){
-    tree -> current = minimum(tree->root->right);
+    tree -> current = minimum(tree->current->right);
     return tree -> current -> pair;
   }
   TreeNode * padre = tree -> current -> parent;
