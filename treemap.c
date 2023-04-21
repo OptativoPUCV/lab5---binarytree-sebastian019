@@ -86,16 +86,15 @@ void eraseTreeMap(TreeMap * tree, void* key){
 
 Pair * searchTreeMap(TreeMap * tree, void* key) {
   tree -> current = tree -> root;
-  printf("xd");
   while(tree->current != NULL){
     int resultado = is_equal(tree,key,tree->current->pair->key);
   
     if(resultado == 1){
       tree -> current = tree -> root;
-      printf("%i", *((int*)(tree->current->pair->value)));
+      //printf("%i", *((int*)(tree->current->pair->value)));
       return tree->current->pair;
     }
-    else if(tree->lower_than(key,tree->current->pair->key) > 1){
+    else if(tree->lower_than(key,tree->current->pair->key) != 1){
       tree -> current = tree -> current -> left;
     }
     else{
