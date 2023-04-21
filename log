@@ -319,3 +319,14 @@ Fri 21 Apr 2023 12:49:11 PM UTC:
  tests:  11|6
 total_score: 15/70
 d5fe85d
+Fri 21 Apr 2023 12:49:35 PM UTC: 
+ treemap.c | 1 -
+ 1 file changed, 1 deletion(-)
+In file included from test.c:4:
+treemap.c: In function ‘searchTreeMap’:
+treemap.c:91:8: error: ‘resultado’ undeclared (first use in this function)
+   91 |     if(resultado == 1){
+      |        ^~~~~~~~~
+treemap.c:91:8: note: each undeclared identifier is reported only once for each function it appears in
+Compilation failed
+c3523f6
