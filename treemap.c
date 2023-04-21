@@ -122,7 +122,7 @@ void removeNode(TreeMap * tree, TreeNode* node) {
     TreeNode *minm = minimum(node -> right);
     node -> pair -> key = minm -> pair -> key;
     node -> pair -> value = minm ->pair -> value;
-    //removeNode(tree,minm);
+    removeNode(tree,minm);
   }
 }
 
