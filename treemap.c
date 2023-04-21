@@ -88,7 +88,7 @@ Pair * searchTreeMap(TreeMap * tree, void* key) {
   tree -> current = tree -> root;
   printf("xd");
   while(tree->current != NULL){
-    int resultado = tree->lower_than(key,tree->current->pair->key);
+    int resultado = is_equal(tree,key,tree->current->pair->key);
     
     if(resultado == 0){
       //tree -> current = tree -> root;
