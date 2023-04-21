@@ -91,7 +91,7 @@ Pair * searchTreeMap(TreeMap * tree, void* key) {
     int resultado = is_equal(tree,key,tree->current->pair->key);
     
     if(resultado == 1){
-      //tree -> current = tree -> root;
+      tree -> current = tree -> root;
       printf("%i", *((int*)(tree->current->pair->value)));
       return tree->current->pair;
     }
