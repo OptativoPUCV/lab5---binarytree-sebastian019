@@ -95,7 +95,7 @@ Pair * searchTreeMap(TreeMap * tree, void* key) {
       printf("%i", *((int*)(tree->current->pair->value)));
       return tree->current->pair;
     }
-    else if(resultado == 0){
+    else if(resultado < 0){
       tree -> current = tree -> current -> left;
     }
     else{
