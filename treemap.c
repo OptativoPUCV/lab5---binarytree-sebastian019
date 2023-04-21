@@ -88,19 +88,19 @@ Pair * searchTreeMap(TreeMap * tree, void* key) {
   tree -> current = tree -> root;
   while(tree->current != NULL){
     int resultado = is_equal(tree,key,tree->current->pair->key);
-  
+    printf("%i", *((int*)(tree->current->pair->value)));
     if(resultado == 1){
       tree -> current = tree -> root;
-      //printf("%i", *((int*)(tree->current->pair->value)));
+      
       return tree->current->pair;
     }
     else if(tree->lower_than(key,tree->current->pair->key) == 1){
       tree -> current = tree -> current -> left;
-      return tree->current->pair;
+      //return tree->current->pair;
     }
     else{
       tree -> current = tree -> current -> right;
-      return tree->current->pair;
+      //return tree->current->pair;
     }
   }
   return NULL;
