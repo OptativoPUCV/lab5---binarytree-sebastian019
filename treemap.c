@@ -120,9 +120,9 @@ void removeNode(TreeMap * tree, TreeNode* node) {
   }
   else{
     TreeNode *minm = minimum(node -> right);
-    node -> key = minm -> key;
-    node -> value = minm -> value;
-    removeNode(tree,minm);
+    node -> pair -> key = minm -> pair -> key;
+    node -> pair -> value = minm ->pair -> value;
+    //removeNode(tree,minm);
   }
 }
 
