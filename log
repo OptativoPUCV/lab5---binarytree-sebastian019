@@ -364,3 +364,9 @@ treemap.c:81:25: error: ‘key’ undeclared (first use in this function); did y
       |                         key_t
 Compilation failed
 1d4e9b5
+Fri 21 Apr 2023 10:03:03 PM UTC: 
+ treemap.c | 8 +++-----
+ 1 file changed, 3 insertions(+), 5 deletions(-)
+ tests:  15|4
+total_score: 25/70
+1245224
