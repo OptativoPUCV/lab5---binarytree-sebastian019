@@ -211,3 +211,9 @@ treemap.c:61:6: error: ‘*new.pair’ is used uninitialized [-Werror=uninitiali
 cc1: all warnings being treated as errors
 Compilation failed
 1dc9969
+Fri 21 Apr 2023 12:26:24 PM UTC: 
+ treemap.c | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+ tests:  6|7
+total_score: 5/70
+3926bdf
