@@ -87,8 +87,9 @@ void eraseTreeMap(TreeMap * tree, void* key){
 Pair * searchTreeMap(TreeMap * tree, void* key) {
   tree -> current = tree -> root;
   while(tree->current != NULL){
-    printf("%i", *((int*)(tree->current->pair->value)));
+    int resultado = is_equal(tree,key,tree->current->pair->key);
     if(resultado == 1){
+      
       
       return tree->current->pair;
     }
