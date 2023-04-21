@@ -90,12 +90,12 @@ Pair * searchTreeMap(TreeMap * tree, void* key) {
   while(tree->current != NULL){
     int resultado = is_equal(tree,key,tree->current->pair->key);
     
-    if(resultado == 0){
+    if(resultado == 1){
       //tree -> current = tree -> root;
       printf("%i", *((int*)(tree->current->pair->value)));
       return tree->current->pair;
     }
-    else if(resultado < 0){
+    else if(resultado == 0){
       tree -> current = tree -> current -> left;
     }
     else{
