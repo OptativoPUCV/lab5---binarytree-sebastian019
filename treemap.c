@@ -168,7 +168,7 @@ Pair * upperBound(TreeMap * tree, void* key) {
       tree -> current = node -> right;
     }
   }
-  if(min == NULL || !tree->lower_than(key,min->pair->key)){
+  if(min != NULL || !tree->lower_than(key,min->pair->key)){
     return min -> pair;
   }
 
