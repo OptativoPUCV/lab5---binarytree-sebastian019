@@ -170,9 +170,13 @@ Pair * upperBound(TreeMap * tree, void* key) {
     }
   }
   if(min == NULL || tree->lower_than(key,min->pair->key)){
-    return min -> pair;
+    while(min != NULL && tree->lower_than(min -> pair -> key,key)){
+      min = min -> parent;
+    }
+    if(min != NULL){
+      return min -> pair;
+    }
   }
-
   return NULL;
 }
 
