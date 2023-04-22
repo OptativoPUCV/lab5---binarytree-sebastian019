@@ -171,6 +171,7 @@ Pair * upperBound(TreeMap * tree, void* key) {
       tree -> current = tree -> current -> right;
       //return tree->current->pair;
     }
+  }
   return NULL;
 }
 
