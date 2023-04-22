@@ -160,13 +160,13 @@ Pair * upperBound(TreeMap * tree, void* key) {
   TreeNode* min = NULL;
   while(node != NULL){
     
-    if(tree->lower_than(key,tree->current->pair->key)){
-      min = node;
-      node =  node -> left;
+    if(tree->lower_than(tree->current->pair->key,key)){
+      node =  node -> right;
       
     }
     else{
-      tree -> current = node -> right;
+      min = node;
+      tree -> current = node -> left;
     }
   }
   if(min == NULL || tree->lower_than(key,min->pair->key)){
