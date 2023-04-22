@@ -833,3 +833,9 @@ treemap.c:120:34: error: ‘TreeNode’ has no member named ‘root’
       |                                  ^~
 Compilation failed
 a44acda
+Sat 22 Apr 2023 11:28:13 PM UTC: 
+ treemap.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+ tests:  28|1
+total_score: 65/70
+69c8f45
