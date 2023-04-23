@@ -89,14 +89,13 @@ void removeNode(TreeMap * tree, TreeNode* node) {
     }
     if(node -> parent -> left == node){
       node -> parent -> left = NULL;
-      return;
+      //return;
     }
     else{
       node -> parent -> right = NULL;
-      return;
+      //return;
     }
   }
-
   else if(node -> left == NULL || node -> right == NULL){
     TreeNode *hijo;
     if(node -> left != NULL){
